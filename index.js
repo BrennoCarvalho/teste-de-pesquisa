@@ -1,18 +1,20 @@
-// acoes de interacao com a pagina
- // acoes
- // acessar o site 
-// pesquisar "carros"
+// ***********************************************************
+// This example support/index.js is processed and
+// loaded automatically before your test files.
+//
+// This is a great place to put global configuration and
+// behavior that modifies Cypress.
+//
+// You can change the location of this file or turn off
+// automatically serving support files with the
+// 'supportFile' configuration option.
+//
+// You can read more here:
+// https://on.cypress.io/configuration
+// ***********************************************************
 
-const el = require('./elements').ELEMENTS;
+// Import commands.js using ES2015 syntax:
+import './commands'
 
-class pesquisa {
-    acessarpesquisa(){
-        cy.visit('https://www.mercadolivre.com.br/');
-    }
-    fazerpesquisa(){
-        cy.get(el.id).type('carros');
-        cy.get(el.pesquisavalida).click();
-    }
-}
-
-export default new pesquisa();
+// Alternatively you can use CommonJS syntax:
+// require('./commands')
