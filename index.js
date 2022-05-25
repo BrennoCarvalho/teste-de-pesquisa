@@ -1,13 +1,18 @@
+// acoes de interacao com a pagina
+ // acoes
+ // acessar o site 
+// pesquisar "carros"
+
 const el = require('./elements').ELEMENTS;
 
-class pesquisainvalida {
-    acessarsite(){
+class pesquisa {
+    acessarpesquisa(){
         cy.visit('https://www.mercadolivre.com.br/');
     }
-
-    efetuarpesquisa(){
-        cy.get(el.efetuar).type('carro mer¨8va{enter}');
+    fazerpesquisa(){
+        cy.get(el.id).type('carros');
+        cy.get(el.pesquisavalida).click();
     }
 }
 
-export default new pesquisainvalida();
+export default new pesquisa();

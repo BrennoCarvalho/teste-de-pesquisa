@@ -1,3 +1,7 @@
+// elementos da pagina para executar as acoes
+
+
 export const ELEMENTS = {
-    efetuar: '#cb1-edit',
+    id:'#cb1-edit',
+    pesquisavalida: '.nav-icon-search'
 }
